@@ -189,7 +189,6 @@ h2:before {
 }
 .name{
 	margin-bottom: 5px;
-	margin-top: 30px;
 }
 .skill{
 	margin-bottom: 5px;
@@ -201,25 +200,23 @@ h2:before {
 	padding-bottom: 90px;
 }
 .contents4{
-	display: inline;
+	display: flex;
+	justify-content: space-between;
 	width: 800px;
-	padding-top: 30px;
 	text-align: left;
 	margin: 0 auto;
 }
 .mail{
-	position: relative;
 	width: 400px;
 	display: inline-block;
 	margin: 0 auto;
-	padding-left: 100px;
+	padding-left: 110px;
 }
 .social{
-	position: relative;
 	width: 400px;
 	display: inline-block;
 	margin: 0 auto;
-	padding-left: 100px;
+	padding-left: 110px;
 }
 .social h3{
 	font-size: 20px;
@@ -237,12 +234,13 @@ h2:before {
 }
 .social-icons{
 	width: 100%;
-	display: inline;
+	display: inline-block;
 }
 .sns{
 	width: 50px;
 	display: inline;
 	margin: 0 auto;
+	position: relative;
 }
 .sns:nth-child(1){
 	margin-right: 20px;
@@ -257,7 +255,7 @@ h2:before {
 /*Footer-------------------------------------------------------------------------------------*/
 footer{
 	height: 60px;
-	background-color: #ce715f;
+	background-color: #ec715f;
 }
 footer p{
 	text-align: center;
@@ -267,10 +265,19 @@ footer p{
 }
 
 /*Mobile---------------------------------------------------------------------------------------*/
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
 	header{
 		width: 100%;
 		height: 50px;
+	}
+	h1{
+		font-size: 40px;
+	}
+	.main-visual p{
+		font-size: 18px;
+	}
+	h2{
+		font-size: 32px;
 	}
 	.wrapper{
 		width: 90%;
@@ -310,6 +317,9 @@ footer p{
 		width: 90%;
 		margin: 0 auto;
 	}
+	.top-content p{
+		font-size: 16px;
+	}
 	.contents1{
 		width: 90%;
 	}
@@ -318,10 +328,10 @@ footer p{
 		width: 300px;
 		margin: 0 auto;
 	}
-	#img2, #img4, #img6{
+	#img1, #img3, #img5{
 		display: none;
 	}
-	#img1, #img3{
+	#img2, #img4{
 		margin-bottom: 10px;
 	}
 	.container2{
@@ -333,42 +343,59 @@ footer p{
 		margin: 0 auto;
 		padding-top: 30px;
 	}
+	.contents2 p{
+		font-size: 16px;
+	}
+	.picture i{
+		margin-bottom: 10px;
+	}
+	h3{
+		font-size: 20px;
+	}
 	.row{
 		display: block;
 		margin: 0 auto;
 		padding-top: 10px;
 	}
+	.contents3 p{
+		font-size: 16px;
+	}
 	.mail{
 		text-align: center;
-		padding: 0;
+		padding-left: 0;
+		padding-bottom: 20px;
+		width: 100%;
 	}
 	.social{
 		text-align: center;
-		padding: 0;
+		padding-left: 0;
+		width: 100%;
 	}
 	.bio{
 		width: 90%;
+		text-align: center;
 	}
 	.bio-image{
 		width: 90%;
 	}
 	.my-icon{
 		margin: 0 auto;
+		text-align: center;
 	}
 	.name{
 		margin-top: 20px;
 	}
-	.mail{
-		margin-bottom: 20px;
-		width: 90%;
-	}
-	.social{
-		width: 90%;
+	.contents4{
+		width: 100%;
+		display: inline-block;
 	}
 	.sns:nth-child(1){
 		margin-right: 8px;
 	}
 	.sns:nth-child(2){
 		margin-right: 8px;
+	}
+	footer p`{
+		font-size: 16px;
 	}
 }
